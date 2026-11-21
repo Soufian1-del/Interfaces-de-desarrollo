@@ -1,10 +1,11 @@
-import { useState } from 'react'
 
 import './App.css'
-import Producto from './assets/Producto'
-import BarraProgreso from './assets/BarraProgreso'
-import AlertBox from './assets/AlertBox'
-import SaludoPersonalizado from './assets/SaludoPersonalizado'
+import Producto from './assets/Props/Producto'
+import BarraProgreso from './assets/Props/BarraProgreso'
+import AlertBox from './assets/Props/AlertBox'
+import SaludoPersonalizado from './assets/Saludo/SaludoPersonalizado'
+import ProductoDescuento from './assets/Funciones/ProductoDescuento'
+import Pedido from './assets/Funciones/Pedido'
 
 function App() {
 
@@ -27,6 +28,14 @@ function App() {
         <div className=' border-solid border-2'>
           <AlertBox tipo="exito" mostrarIcono={ true}></AlertBox>
         </div>
+      </div>
+      <div>
+        <h2>Ejercicio 1-funciones</h2>
+        <ProductoDescuento nombre="monitor" precio={200} descuento={10}/>
+      </div>
+      <div>
+        <h2>Ejercicio 3-funciones</h2>
+        <Pedido producto="libro" cantidad={3} precio={20}/>
       </div>
     </div>
   )
