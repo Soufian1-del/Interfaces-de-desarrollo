@@ -6,6 +6,7 @@ import AlertBox from './assets/Props/AlertBox'
 import SaludoPersonalizado from './assets/Saludo/SaludoPersonalizado'
 import ProductoDescuento from './assets/Funciones/ProductoDescuento'
 import Pedido from './assets/Funciones/Pedido'
+import Tarjeta from './assets/Eventos/Tarjeta'
 
 function App() {
 
@@ -36,6 +37,10 @@ function App() {
       <div>
         <h2>Ejercicio 3-funciones</h2>
         <Pedido producto="libro" cantidad={3} precio={20}/>
+      </div>
+      <div>
+        <h2>Ejercicio-eventos</h2>
+        <Tarjeta nombre="atun" precio={15} cantidad={10000}/>
       </div>
     </div>
   )
